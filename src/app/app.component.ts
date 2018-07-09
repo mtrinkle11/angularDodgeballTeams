@@ -1,4 +1,6 @@
-import { Component } from '@angular/core';
+import {
+  Component
+} from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +8,28 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'app';
+  name = 'Mike';
+  active = true;
+  totalTeams = 4
+  teams = [{
+    teamName: 'Chupacabras',
+    players: ['Michael', 'Diara', 'Tiny', 'Kenny', 'Johnny'],
+    teamHome: 'Mission'
+  }, 
+  {
+    teamName: 'Wrench Dodgers',
+    players: ['Cesare', 'Erick', 'Victor', 'Jess', 'Jeremy'],
+    teamHome: 'Mission'
+  },
+  {
+    teamName: 'Los Tamales',
+    players: ['Delia', 'Jorge', 'Jacqueline', 'Steven', 'Luis'],
+    teamHome: 'Mission'
+  },
+  {
+    teamName: 'Ocelots',
+    players: ['Ernesto', 'Mike', 'Ernesto', 'Emmanuel', 'Roxanne'],
+    teamHome: 'Tokyo'
+  }
+];
 }
